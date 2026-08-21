@@ -1,0 +1,3 @@
+{"event": "job_created", "job_id": "10c0b5d94ae7", "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw", "ts": "2026-08-14T07:29:11.686726Z"}
+{"event": "job_updated", "status": "downloading", "stage": "downloading", "pct": 0.0, "ts": "2026-08-14T07:29:11.702320Z"}
+{"event": "job_updated", "status": "error", "stage": "downloading", "pct": 0.0, "ts": "2026-08-14T07:29:11.710046Z"}

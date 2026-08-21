@@ -1,0 +1,8 @@
+{"event": "job_created", "job_id": "f8d8f92b97e8", "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw", "ts": "2026-08-14T07:42:00.933648Z"}
+{"event": "job_updated", "status": "downloading", "stage": "downloading", "pct": 0.0, "ts": "2026-08-14T07:42:00.941250Z"}
+{"event": "job_updated", "status": "downloading", "stage": "downloading", "pct": 0.6, "ts": "2026-08-14T07:42:03.756758Z"}
+{"event": "job_updated", "status": "downloading", "stage": "downloading", "pct": 1.0, "ts": "2026-08-14T07:42:04.295987Z"}
+{"event": "job_updated", "status": "transcribing", "stage": "transcribing", "pct": 0.0, "ts": "2026-08-14T07:42:04.334470Z"}
+{"event": "job_updated", "status": "transcribing", "stage": "transcribing", "pct": 1.0, "ts": "2026-08-14T07:42:57.429884Z"}
+{"event": "job_updated", "status": "analyzing", "stage": "analyzing", "pct": 0.0, "ts": "2026-08-14T07:42:57.552000Z"}
+{"event": "job_updated", "status": "error", "stage": "analyzing", "pct": 0.0, "ts": "2026-08-14T07:43:07.953341Z"}

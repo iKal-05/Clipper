@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  clipper-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - clipper-storage:/app/storage
+      - clipper-models:/root/.local/share/clipper/models
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - CORS_ORIGINS=["http://localhost:5173","http://localhost:8000","http://127.0.0.1:5173"]
+      - STORAGE_DIR=/app/storage
+      - WHISPER_MODEL_DIR=/root/.local/share/clipper/models
+      - MAX_MEMORY_MB=2048
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/api/health', timeout=3).raise_for_status()"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  clipper-storage:
+  clipper-models:
